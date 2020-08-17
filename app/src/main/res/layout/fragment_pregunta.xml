@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<constraintlayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imagenCamara"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:contentDescription="imagen camara"/>
+
+    <TextView
+        android:id="@+id/tituloPregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pregunta 1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tituloCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoria"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/categoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:id="@+id/radioGrupoRespuestas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioRespuestaUno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioRespuestaDos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioRespuestaTres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioRespuestaCuatro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConsultaRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:paddingHorizontal="20dp"
+        android:text="VER RESPUESTA"
+        android:textColor="#FFFFFF" />
+
+</constraintlayout>
